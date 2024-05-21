@@ -6,11 +6,11 @@ using UnityEditor;
 
 public class MenuHandle : MonoBehaviour
 {
-    public GameProperties gp;
+    public GameProperties gameProperties;
     public void Startgame()
     {
         SceneManager.LoadScene(1);
-        gp.isAlive = true;
+        gameProperties.isAlive = true;
     }
     public void Exit()
     {
@@ -23,7 +23,7 @@ public class MenuHandle : MonoBehaviour
     public void restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        gp.isAlive = true;
+        gameProperties.isAlive = true;
     }
     public void Returntomenu()
     {
